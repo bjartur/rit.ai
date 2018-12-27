@@ -2,8 +2,41 @@ doctype html
 html
   head
     link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css")
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.6.3/css/all.css', integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/', crossorigin='anonymous')
+
     link(rel="stylesheet", href="/css/style.css")
     title Reykjavik Functional Programming
   body
     .container
-        p Hello world
+      nav.navbar.navbar-expand-lg.navbar-light
+        a.navbar-brand(href='#') reiknirit
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='/')
+                | Heim
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='https://github.com/reiknirit') Github
+            li.nav-item
+              a.nav-link(href='https://fpis.slack.com/') Slack
+            li.nav-item
+              a.nav-link(href='https://www.facebook.com/groups/reykjavikfp/') Facebook
+      .row
+        .col-12
+          iframe(src="https://calendar.google.com/calendar/embed?src=jaoemtr4v536qd567gi89agbug%40group.calendar.google.com&ctz=Atlantic%2FReykjavik", class="iframe-calendar")
+      .row
+        .col-12
+          hr
+      .row(class="footer")
+        .col-4
+          .icon
+            i(class="fas fa-phone")
+            span Sími: 6182195
+        .col-4
+        .col-4
+          .icon(style="float: right")
+            i(class="fas fa-envelope")
+            span Netfang: 

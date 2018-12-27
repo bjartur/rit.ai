@@ -1,0 +1,24 @@
+// Media query mixins
+
+/// Breakpoints
+bp-sm = 768px    // Tablets
+bp-md = 991px    // Small desktops
+bp-lg = 1199px   // Average desktops
+bp-wd = 1320px   // Large desktop
+
+mobile()
+  @media (max-width: bp-sm)
+    {block}
+
+tablet()
+  @media (min-width: bp-sm + 1) and (max-width: bp-md)
+    {block}
+
+desktop()
+  @media screen and (min-width: bp-md + 1) and (max-width: bp-lg + 1)
+    {block}
+
+desktop-wide()
+  @media screen and (min-width: bp-lg + 2)
+    {block}
+

@@ -1,0 +1,21 @@
+.navbar-toggler {
+  border: 0 !important;
+  padding-right: 0 !important;
+}
+.navbar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.iframe-calendar {
+  width: 100%;
+  height: 600px;
+  border: 0 !important;
+}
+@media (max-width: 768px) {
+  .iframe-calendar {
+    height: 400px;
+  }
+}
+.footer .icon span {
+  padding-left: 8px;
+}
