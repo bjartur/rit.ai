@@ -24,6 +24,18 @@ Should display:
     * Build successful.
     Listening on 8080
 
+### Using gulp
+
+Gulp is used for processing stylus stylesheets and converting them to plain css. You can watch *.styl files within static/stylus by running
+
+    gulp
+
+or simply
+
+    gulp stylus
+
+to run the task once
+
 ### Structure
 
 Purescript code is located within /src. 
